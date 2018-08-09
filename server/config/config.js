@@ -4,6 +4,12 @@ process.env.PORT = process.env.PORT || 8080;
 // Entorno
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
+// Vencimiento del token
+process.env.EXPIRES_TOKEN = 60 * 60 * 24 * 30 * 1000;
+
+// Seed
+process.env.SEED = process.env.SEED || 'hola-mundito';
+
 // Base de datos
 let urlDB;
 
