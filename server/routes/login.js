@@ -39,7 +39,7 @@ app.post('/login', (req, res) => {
           }, process.env.SEED, { expiresIn: process.env.EXPIRES_TOKEN });
 
         res.json({
-            ok: false,
+            ok: true,
             usuario: usuarioDb,
             token,
         });
