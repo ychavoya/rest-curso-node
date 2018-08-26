@@ -5,7 +5,9 @@ process.env.PORT = process.env.PORT || 8080;
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 // Vencimiento del token
-process.env.EXPIRES_TOKEN = 60 * 60 * 24 * 30 * 1000;
+// process.env.EXPIRES_TOKEN = 60 * 60 * 24 * 30 * 1000;
+process.env.EXPIRES_TOKEN = '24h';
+
 
 // Seed
 process.env.SEED = process.env.SEED || 'hola-mundito';
